@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Empire Of Gaming</title>
+  <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(190, 189, 189);">
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/icons/logo.png" alt="Logo" class="d-inline-block navbar-icons align-text-top" id="logo">
+        </a>
+
+        <div id="divSearch">
+          <input type="text" id="txtSearch" placeholder="Buscar..." />
+        </div>
+
+        <div id="login">
+          <div class="dropdown">
+            <p class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              <a href="" style="text-decoration:none; color: white;">
+                <img class="navbar-icons" id="login-icon" src="./images/icons/avatar.png" alt="">
+              </a>
+            </p>
+            <form class="dropdown-menu p-3" style="background-color: rgb(223, 222, 222);">
+              <div class="mb-3">
+                <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleDropdownFormPassword2" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="********">
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                  <label class="form-check-label" for="dropdownCheck2">
+                    Se lembrar
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-dark">Entrar</button>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./cadastro.html">Novo por aqui? Cadastrar</a>
+              <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <a href="./wishlist.html" id="wishlist">
+            <p id="totalWishlist1"></p>
+            <p id="totalWishlist2"></p>
+            <img class="navbar-icons" id="wishlist-icon" src="./images/icons/wishlist.png" alt="">
+          </a>
+        </div>
+
+        <div style="margin-right: 3%; margin-bottom: 2.5%">
+          <a href="./cart.html" style="text-decoration: none;">
+            <p id="totalItens1" style=" position:absolute; margin-left:1.4%; color: white"></p>
+            <p id="totalItens2" style=" position:absolute; margin-left:1%; color: white"></p>
+            <img class="navbar-icons" src="./images/icons/cart.png" alt="cart" style="position: absolute; margin-top: -0.6%">
+          </a>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="max-width: 100%;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <a href="./products/resident-evil-4.html">
+            <img src="./images/resident-evil-4/resident-evil-4-banner.jpg" class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <a href="./products/playstation-5.html">
+            <img src="./images/playstation-5/ps5-banner.png" class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./products/diablo-4.html">
+            <img src="./images/diablo-4/diablo-4-banner.jpg" class="d-block w-100" alt="...">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><br>
+
+    <div class="cards-grid">
+      <div class="item card-hover">
+        <br>
+        <a href="./products/playstation-5.html">
+          <img src="./images/playstation-5/ps5.jpg" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/playstation-5.html" style="text-decoration: none; color: black">
+            <h4 class="product">Console PlayStation®5</h4>
+            <p class="companies"><b>Sony Interactive</b></p>
+            <h5 class="price"><b>R$4.489</b></h5>
+          </a>
+          <br>
+          <p class="installments">10x de R$448.90 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <a href="./products/xbox-series-s.html">
+          <img src="./images/xbox-series-s/xbox_series_s-1.jpg" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/xbox-series-s.html" style="text-decoration: none; color: black">
+            <h4 class="product">Xbox Series S</h4>
+            <p class="companies"><b>Microsoft</b></p>
+            <h5 class="price"><b>R$2.000</b></h5>
+          </a>
+          <br>
+          <p class="installments">10x de R$200.00 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <a href="./products/resident-evil-4.html">
+          <img src="./images/resident-evil-4/resident-evil-4.jpg" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/resident-evil-4.html" style="text-decoration: none; color: black">
+            <h4 class="product">Resident Evil 4 (2023) - PS5</h4>
+            <p class="companies"><b>Capcom</b></p>
+            <h5 class="price"><b>R$270</b></h5>
+          </a>
+          <br>
+          <p class="installments">10x de R$27.00 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <a href="./products/elden-ring.html">
+          <img src="./images/elden-ring/elden-ring.jpg" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/elden-ring.html" style="text-decoration: none; color: black">
+            <h4 class="product">Elden Ring - Edição de Colecionador</h4>
+            <p class="companies"><b>Bandai Namco</b></p>
+            <h5 class="price"><b>R$$1.600</b></h5>
+          </a>
+          <br>
+          <p class="installments">10x de R$160.00 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <a href="./products/xbox-controller.html">
+          <img src="./images/xbox-controller/xbox_controller.png" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/xbox-controller.html" style="text-decoration: none; color: black">
+            <h4 class="product">Controle Xbox Series - Carbon Black</h4>
+            <p class="companies"><b>Microsoft</b></p>
+            <h5 class="price"><b>R$500</b></h5>
+          </a>
+          <br>
+          <p class="installments">10x de R$50.00 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <a href="./products/diablo-4.html">
+          <img src="./images/diablo-4/diablo-4-ps5.png" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/diablo-4.html" style="text-decoration: none; color: black">
+            <h4 class="product">Diablo 4 - PS5</h4>
+            <p class="companies"><b>Blizzard Entertainment</b></p>
+            <h5 class="price"><b>R$340</b></h5>
+          </a>
+          <br>
+          <p style="color: red;"><b>Pré-venda</b></p>
+          <p class="installments">10x de R$34.00 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <a href="./products/dead-space.html">
+          <img src="./images/dead-space/dead-space.png" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/dead-space.html" style="text-decoration: none; color: black">
+            <h4 class="product">Dead Space (2023) - Xbox Series x/s</h4>
+            <p class="companies"><b>Eletronic Arts</b></p>
+            <h5 class="price"><b>R$280</b></h5>
+          </a>
+          <br>
+          <p class="installments">10x de R$28.00 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <a href="./products/xbox-series-x-halo.html">
+          <img src="./images/xbox-series-x/xbox_series_x_halo.jpg" class="card-img-top image" alt="...">
+        </a>
+        <div class="item-content">
+          <a href="./products/xbox-series-x-halo.html" style="text-decoration: none; color: black">
+            <h4 class="product">Xbox Series X - Halo Infinite</h4>
+            <p class="companies"><b>Microsoft</b></p>
+            <h5 class="price"><b>R$7.850</b></h5>
+          </a>
+          <br>
+          <p class="installments">10x de R$785.00 sem juros</p>
+          <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+      </div>
+
+      <div class="item card-hover">
+        <br>
+        <img class="image" src="./images/dead-space/dead-space.png" alt="">
+        <div class="item-content">
+            <h4 class="product">Dead Space (2023) - Xbox Series x/s</h4>
+            <p class="companies" style="display:block"><b>Eletronic Arts</b></p>
+            <h5 class="price"><b>R$280</b></h5>
+            <p class="installments">10x de R$28.00 sem juros</p>
+            <p class="freight" style="color: green;">FRETE GRÁTIS</p>
+        </div>
+    </div>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="./js/script.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  #logo {
+    max-width: 100px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+  }
+  
+  @media (max-width: 1280px) or (max-height: 720px) {
+    #login {
+      position: absolute;
+      margin-left: 79%;
+      margin-top: 1.5%
+    }
+  
+    #wishlist-icon {
+      position: absolute;
+      margin-left: 10.5%;
+      margin-top: -1.7%
+    }
+  
+    #totalWishlist1 {
+      position: absolute;
+      font-weight: bold;
+      margin-left: 12.1%;
+      margin-top: -0.8%;
+      color: white;
+    }
+  
+    #totalWishlist2 {
+      position: absolute;
+      font-weight: bold;
+      margin-left: 11.7%;
+      margin-top: -0.9%;
+      color: white
+    }
+  
+    #card-deck {
+      margin-left: 0.5%;
+      overflow: hidden;
+    }
+  
+    #more-products {
+      margin-left: 0.5%;
+      overflow: hidden;
+    }
+
+    #item {
+        min-height: 400px;
+        margin-left: 3%;
+      }
+  }
+  
+  @media (min-width: 1281px) or (min-height: 721px) {
+    #login {
+      position: absolute;
+      margin-left: 79%;
+      margin-top: 1.5%
+    }
+  
+    #wishlist-icon {
+      position: absolute;
+      margin-left: 11.5%;
+      margin-top: -1.7%
+    }
+  
+    #totalWishlist1 {
+      position: absolute;
+      font-weight: bold;
+      margin-left: 13%;
+      margin-top: -0.8%;
+      color: white;
+    }
+  
+    #totalWishlist2 {
+      position: absolute;
+      font-weight: bold;
+      margin-left: 12.7%;
+      margin-top: -0.9%;
+      color: white
+    }
+  
+    #cards-grid {
+      margin-left: 3.5%;
+      overflow: hidden;
+    }
+  
+    #more-products {
+      margin-left: 3.5%;
+      overflow: hidden;
+    }
+
+    #item {
+        min-height: 400px;
+        margin-left: 6%;
+      }
+  }
+  
+  @media (max-width: 1132px) {
+    #login {
+      position: absolute;
+      margin-left: 76%;
+      margin-top: 2.5%
+    }
+  
+    #wishlist-icon {
+      position: absolute;
+      margin-left: 6.5%;
+      margin-top: -1.7%
+    }
+  
+    #totalWishlist1 {
+      position: absolute;
+      font-weight: bold;
+      margin-left: 8%;
+      margin-top: -0.8%;
+      color: white;
+    }
+  
+    #totalWishlist2 {
+      position: absolute;
+      font-weight: bold;
+      margin-left: 7.7%;
+      margin-top: -0.9%;
+      color: white
+    }
+  
+    #cards-grid {
+      margin-left: 8%;
+      overflow: hidden;
+    }
+  
+    #more-products {
+      margin-left: 5%;
+      overflow: hidden;
+    }
+  }
+  
+  #divSearch {
+    margin-left: -10%;
+    background-color: #ffffff;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 500px;
+  }
+  
+  #txtSearch {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: solid 1px;
+    border-radius: 10px;
+    height: 40px;
+    width: 498px;
+  }
+  
+  .navbar-icons {
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .navbar-icons:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  /* #cartImage.hovered {
+      transition: all 0.5s;
+      cursor: pointer;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+  } */
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-left: 1.6%;
+}
+
+.item {
+    background-color: white;
+    border-radius: 2%;
+    width: 93%;
+    margin-top: 3%;
+}
+
+.item-content {
+    padding-left: 10%;
+}
+
+.image {
+    max-width: 230px;
+    max-height: 270px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  .card-hover:hover {
+    box-shadow:
+      1px 1px #000000,
+      2px 2px #000000,
+      3px 3px #000000;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  
+  .product-container {
+    max-width: 100%;
+    height: 574px;
+  }
+  
+  #more-products img {
+    max-width: 230px;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  .product-images {
+    max-width: 40px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  #grid {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+  }
+  
+  #card-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  
+  #content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  #footer-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 30% 20%;
+  }
+  
+  #footer-grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  #footer-grid-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  #footer-grid-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  
+  #footer-grid-4 {
+    grid-column-start: 4;
+  }
+  
+  #products-list img {
+    max-width: 180px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+  }
+  
+  #product-price {
+    display: inline;
+    margin-left: 86.5%;
+    padding-bottom: 100px;
+  }
+  
+  .description {
+    margin-left: -20%;
+  }
+  
+  #card-footer {
+    margin-left: 31%;
+    margin-top: 4%;
+  }
+  
+  #totalItens1,
+  #totalItens2 {
+    font-weight: bold;
+  }
+  
+  .remove {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1% 2%;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  .remove:hover,
+  .remove:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+  .remove {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  
+  .remove:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+  
+  
+  #finish {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #f1c40f;
+    border-radius: 0.6em;
+    color: #f1c40f;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  #finish {
+    padding-left: 85px;
+    border-color: #f1c40f;
+    border-radius: 0;
+    color: #f1c40f;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+  
+  #finish:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #f1c40f;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  
+  #finish:hover {
+    color: #fff;
+  }
+  
+  #finish:hover:after {
+    width: 110%;
+  }
+  
+  #back-to-top {
+    width: 100%;
+    height: 40px;
+    border-radius: 0%;
+  }
+  
+  .social,
+  .terms {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .icons:hover,
+  .social:hover,
+  .terms:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.596);
+  }
+  
+  .icon,
+  .icons {
+    list-style-type: none;
+  }
+  
+  .product:hover {
+    text-decoration: underline;
+    color: goldenrod;
+  }
+  
+  .button-image {
+    border-radius: 10px;
+  }
+  
+  .button-image:hover {
+    border: 3px solid black;
+  }
+  
+  #empty {
+    min-height: 200px;
+    margin-top: 10%;
+  }
+  
+  .companies {
+    color: slategray;
+  }
